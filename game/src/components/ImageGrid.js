@@ -1,5 +1,6 @@
 import React from "react"
 import Container from "./Container"
+import Scores from "./Scores"
 
 const images = {
     blackPanther: {
@@ -103,6 +104,7 @@ const images = {
 function ImageGrid() {
     return (
       <Container>
+          <Scores></Scores>
           <div id="imageGrid">
             <div role="img" style={images.blackPanther}></div>
             <div role="img" style={images.blackWidow}></div>

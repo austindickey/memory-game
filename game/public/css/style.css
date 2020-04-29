@@ -15,12 +15,8 @@ body {
     color: #fff;
 }
 
-.scores ul {
-    position: absolute;
-    right: 30px;
-    top: 5px;
-    list-style: none;
-    text-align: right;
+.logo {
+    margin: auto;
 }
 
 /* =================================
@@ -33,6 +29,20 @@ body {
     color: #fff;
     border-radius: 0;
     margin-bottom: 0;
+}
+
+.scores {
+    margin: auto;
+    margin-top: 50px;
+    width: 25%;
+}
+
+.scores p {
+    background-color: #3f769c;
+    color: #fff;
+    padding: 15px;
+    border: 5px solid #000;
+    text-align: center;
 }
 
 #imageGrid {

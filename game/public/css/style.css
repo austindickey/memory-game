@@ -1,0 +1,15 @@
+.jumbotron {
+    background-image: url(../img/skyline.jpeg);
+    height: 536px;
+    color: #fff;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.scores ul {
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    list-style: none;
+    text-align: right;
+}

@@ -13,3 +13,9 @@
     list-style: none;
     text-align: right;
 }
+
+#imageGrid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 8%;
+}

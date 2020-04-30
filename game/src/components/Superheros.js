@@ -1,7 +1,3 @@
-import React from "react"
-import Container from "./Container"
-import Scores from "./Scores"
-
 const images = [
     {
         id: 1,
@@ -64,35 +60,3 @@ const images = [
         backgroundImage: 'https://github.com/austindickey/memory-game/blob/master/game/public/img/superheros/thor.jpg?raw=true'
     }
 ]
-
-class ImageGrid extends React.Component {
-    state = {
-        current: 0,
-        best: 0
-    }
-
-    increaseScore = () => {
-        this.setState({ current: this.state.current + 1 })
-
-        if (this.state.current >= this.state.best) {
-            this.setState({ best: this.state.current + 1 })
-        }
-    }
-
-    render() {
-        return (
-            <Container>
-                <Scores current={this.state.current} best={this.state.best}></Scores>
-                <div id="imageGrid">
-
-                    {images.map(item => (
-                        <img className="superheroPic" src={item.backgroundImage} alt="No Pic" key={item.id} onClick={this.increaseScore}></img>
-                    ))}
-                    
-                </div>
-            </Container>
-        )
-    }
-}
-
-export default ImageGrid

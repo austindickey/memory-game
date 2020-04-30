@@ -34,7 +34,7 @@ body {
 .scores {
     margin: auto;
     margin-top: 50px;
-    width: 25%;
+    width: 28%;
 }
 
 .scores p {
@@ -49,6 +49,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 50px 8%;
+}
+
+.superheroPic {
+    margin: 15px auto;
+    border: 5px solid #000;
 }
 
 /* =================================

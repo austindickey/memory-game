@@ -2,6 +2,8 @@ import React from "react"
 import Container from "./Container"
 import Scores from "./Scores"
 
+const shuffle = require('shuffle-array')
+
 const images = [
     {
         id: 1,
@@ -65,18 +67,33 @@ const images = [
     }
 ]
 
+let chosenPics = []
+
 class ImageGrid extends React.Component {
     state = {
         current: 0,
         best: 0
     }
 
-    increaseScore = () => {
-        this.setState({ current: this.state.current + 1 })
+    picClick = (event) => {
+        const picId = event.target.id
+        
+        if (chosenPics.includes(picId)) {
+            // Loss Logic
+            chosenPics = []
+            this.setState({ current: 0 })
+        } else {
+            // Win Logic
+            console.log("You won")
+            chosenPics.push(picId)
+            this.setState({ current: this.state.current + 1 })
 
-        if (this.state.current >= this.state.best) {
-            this.setState({ best: this.state.current + 1 })
+            if (this.state.current >= this.state.best) {
+                this.setState({ best: this.state.current + 1 })
+            }
         }
+
+        shuffle(images)
     }
 
     render() {
@@ -86,7 +103,7 @@ class ImageGrid extends React.Component {
                 <div id="imageGrid">
 
                     {images.map(item => (
-                        <img className="superheroPic" src={item.backgroundImage} alt="No Pic" key={item.id} onClick={this.increaseScore}></img>
+                        <img className="superheroPic" src={item.backgroundImage} alt="Superhero Pic" key={item.id} id={item.id} onClick={this.picClick}></img>
                     ))}
                     
                 </div>

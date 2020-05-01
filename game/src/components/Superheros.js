@@ -1,4 +1,4 @@
-const images = [
+export const images = [
     {
         id: 1,
         name: "Black Panther",
@@ -60,3 +60,7 @@ const images = [
         pic: "/img/superheros/thor.jpg"
     }
 ]
+
+export default {
+    images,
+}

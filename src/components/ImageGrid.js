@@ -41,7 +41,7 @@ class ImageGrid extends React.Component {
 
                     {/* Mapping images array */}
                     {images.map(item => (
-                        <img className="superheroPic" src={item.pic} alt="Superhero Pic" key={item.id} id={item.id} onClick={this.picClick}></img>
+                        <img className="superheroPic" src={window.location.origin + item.pic} alt="Superhero Pic" key={item.id} id={item.id} onClick={this.picClick}></img>
                     ))}
                     
                 </div>

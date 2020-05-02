@@ -1,4 +1,7 @@
 # GameHeros
+
+**Note: After deploying this site to Github Pages, it seemed to break my localhost version. The site cannot find the CSS styles or the img folder.**
+
 This is a game that test your memory. Click on an image without clicking on the same one twice until you have clicked all 12 to win. This game will run continuously.
 
 ---

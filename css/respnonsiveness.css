@@ -1,0 +1,18 @@
+@media (max-width: 1024px) {
+    .scores {width: 33%;}
+}
+
+@media (max-width: 768px) {
+    .scores {width: 42%;}
+}
+
+@media (max-width: 414px) {
+    .scores {width: 50%;}
+    .jumbotron h1 {padding-top: 100px;}
+    .jumbotron p {margin: 0 30px;}
+}
+
+@media (max-width: 375px) {
+    .scores {width: 53%;}
+    .jumbotron h1 {font-size: 38px;}
+}

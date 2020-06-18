@@ -4,6 +4,8 @@
 
 This is a game that test your memory. Click on an image without clicking on the same one twice until you have clicked all 12 to win. This game will run continuously.
 
+Deployed Link: https://austindickey.github.io/memory-game/
+
 ---
 
 ### **NPM Dependencies**
